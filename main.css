@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu" ;
+}
+body{
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, wheat, rgb(49, 47, 47) , black);
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
+h1{
+	font-size: 3.0rem;
+	font-weight: 300;
+    color: whitesmoke;
+	margin-bottom: 3rem;
+    text-align: center;
+}
+#main{
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+#main-input {
+    flex: 1 1 0%;
+    background-color: wheat;
+    border-radius: 2rem ;
+    padding: 1rem;
+    margin-right: 2rem;
+    color: black;
+    font: bold;
+    font-size: 1.15rem;
+    text-align: center;
+    align-items: center;
+}
+#main-input::placeholder{
+    color: black;
+}
+#submit{
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: 2px solid whitesmoke;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: 0.7s;
+}
+#submit:hover {
+    opacity: 0.8;
+    color: darkslategray;
+}
+#submit:active {
+    opacity: 0.6;
+}
+main {
+	flex: 1 1 0%;
+	padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 1.5rem;
+    font-weight: 300;
+    color: wheat;
+    font-style: italic;
+    margin-bottom: 1rem;
+
+}
+
+#tasks .task {
+	display: flex;
+    justify-content: space-between;
+    background-color:ghostwhite;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: var(--grey);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) 
+{
+	color:black;
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 1.25rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+    margin: 0 .5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+    color: palevioletred;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+    color: teal;
+}
+
+.task .actions .edit {
+    color: blueviolet;
+}
+
+.task .actions .delete {
+	color: red;
+}
+
